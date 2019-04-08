@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h3>Candidate Information</h3>
+    <form>
+        <table border="1" style="background-color:turquoise">
+            <tr>
+                <th style="text-align:left">
+                    Name:
+                        <span style="color: red">*</span>   
+                </th>   
+                <td>
+                    <input type="text" id="name" name="name" placeholder="Enter your Name" required pattern="[A-Z][a-z]{2,15}"/>    
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align:left">
+                    Password:
+                    <span style="color:red">*</sapn>
+                </th>
+                <td>
+                    <input type="password" id="password" name="password" placeholder="Enter your Password" required pattern="{15}"/>
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align:left">
+                    Phone Number:
+                    <span style="color:red">*</sapn>
+                </th>
+                <td>
+                        <input type="text" id="mobile" name="mobile" placeholder="Enter your Phone Number" required pattern="[6-9][\d]{9}">
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align:left">
+                    Gender:
+                    <span style="color: red">*</span>
+                </th>
+                <td>
+                    <input type="radio" id="Male" name="gender" required>Male
+                    <input type="radio" id="Female" name="gender" required>Female
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align:left">
+                    Date of Birth:
+                    <span style="color: red">*</span>
+                </th>
+                <td>
+                    <input type="date" id="date" name="date" max="2019-03-30" required pattern="[a-z_\.0-9]+@[a-z0-9]+\.com"/>
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align:left">
+                    Highest Qualification:
+                    <span style="color:red">*</span>
+                </th>
+                <td>
+                    <select>
+                        <option value="Select your Highest Qualification" disabled selected>Select your Highest Qualification</option>
+                        <option value="BE/BTech">BE/BTech</option>
+                        <option value="MTech">MTech</option>
+                        <option value="MBA">MBA</option>
+                        <option value="MCA">MCA</option>
+                        <option value="MSc">MSc</option>
+                        <option value="MA">MA</option>
+                        <option value="BSC">BSC</option>
+                        <option value="HSC">HSC</option>
+                        <option value="SSC">SSC</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align:left">
+                    Courses Interested In:
+                    <span style="color:red">*</span>
+                </th>
+                <td>
+                    <input type="checkbox" id="mycheck" name="JAVA" value="JAVA">JAVA
+                    <input type="checkbox" id="mycheck" name="HTML5" value="HTML5">HTML5
+                    <input type="checkbox" id="mycheck" name="CSS3" value="CSS3">CSS3
+                    <input type="checkbox" id="mycheck" name="ANGULAR JS" value="ANGULAR JS">ANGULAR JS
+                    <input type="checkbox" id="mycheck" name="JQuery" value="JQuery">JQuery
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align:left">
+                    Comments: (Mention External Certifications if any):
+                </th>
+                <td>
+                    <textarea rows="5" cols="60" name="comments" placeholder="Enter your Comments if any"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align:left">
+                    Upload Degree/External Certificates:
+                    <span style="color:red">*</span>
+                </th>
+                <td>
+                    <input type="file" name="degree" value="degree">
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>
+                        <input type="submit" value="Submit Information"/>
+                        <input type="reset" value="Clear"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <footer>
+        <span style="color:red">All fields marked(*)are mandatory</span>
+    </footer>
+    </center>
+</body>
+</html>
