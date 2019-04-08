@@ -8,32 +8,73 @@
 </head>
 <body>
     <center>
-    <table border="1">
-        <tr>
-            <td>Empcode</td>
-            <td>Emp Name</td>
-            <td>Dept Code</td>
-            <td>Experiences</td>
-        </tr>
-        <tr>
-            <td>1001</td>
-            <td>Kiran Rao</td>
-            <td><a href="mumbai.html">10</a></td>
-            <td>8 Yrs.</td>
-        </tr>
-        <tr>
-            <td>1002</td>
-            <td>Aamir Khan</td>
-            <td><a href="pune.html">20</a></td>
-            <td>5 Yrs.</td>
-        </tr>
-        <tr>
-            <td>1003</td>
-            <td>Ishita Shah</td>
-            <td><a href="chennai.html">30</a></td>
-            <td>10 Yrs.</td>
+            <caption>Employee Details</caption>
+    <form method="GET">
+        <table border="1" style="background-color:steelblue">
+            <tr>
+                <th>Name</th>
+                <td>
+                    <input type="text" id="Name" size="20" required pattern="[A-Z][A-Za-z]{2,20}"/>
+                </td>
             </tr>
-    </table>
+            <tr>
+                <th>Employee Code</th>
+                <td>
+                    <input type="text" id="Code" size="4" required pattern="[A-Z][A-Za-z]{4}"/>                   
+                </td>
+            </tr>
+            <tr>
+                <th>Department</th>
+                <td>
+                        <input type="radio" id="Admin" name="dept" value="Admin"/>Admin<br>
+                        <input type="radio" id="HR" name="dept" value="HR"/>HR<br>
+                        <input type="radio" id="Technical" name="dept" value="Technical"/>Technical<br>
+                        <input type="radio" id="Accounts" name="dept" value="Accounts"/>Accounts
+                </td>
+            </tr>
+            <tr>
+                <th>Date of joining</th>
+                <td>
+                    <input type="date" id="Date" name="Date">
+                </td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>
+                    <textarea name="Address" rows="5" cols="25" style="overflow:auto"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>Training Program attended</th>
+                <td>
+                        <input type="checkbox" name="HTML" value="HTML/DHTML">HTML/DHTML<br>
+                        <input type="checkbox" name="Java" value="Java">Java<br>
+                        <input type="checkbox" name="Client" value="Clientt/Server">Clientt/Server<br>
+                        <input type="checkbox" name="NET" value="NET">.Net
+                </td>
+            </tr>
+            <tr>
+                <th>Training Program needed to attend</th>
+                <td>
+                    <select name="TPA">
+                        <option>JavaScript</option>
+                        <option>Node Js</option>
+                        <option>Angular Js</option>
+                        <option>Advance Java</option>
+                </td>
+            </tr>
+            <tr>
+                <th>Send the information at</th>
+                <td>
+                    <a href="mailto:empinfo@capgemini.com">empinfo@capgemini.com</a>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <input type="submit" value="Submition" style="background-color:cadetblue"/>
+        <input type="reset" value="Clear" style="background-color:cadetblue"/>
+    </form>
 </center>
 </body>
 </html>
